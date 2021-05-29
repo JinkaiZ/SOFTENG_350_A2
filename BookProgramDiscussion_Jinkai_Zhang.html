@@ -12,15 +12,14 @@
 
 
 <body style="width:1440px; margin:0 auto;">
-
+  <!-- The header section -->
   <div class="custom-background-color" style="display: flex; flex-direction: row;" id="header">
 
     <div id="logo_wrapper">
-
       <img src="logo.png" alt="logo" width="75" height="75" id="logo_image"></img>
       <p id="logo_text">Book Program DISCUSSION</p>
-
     </div>
+
     <div id="nav-wrapper">
       <a href="#" id="nav-button_home">Home</a>
       <a href="#" id="nav-button">About Us</a>
@@ -28,28 +27,33 @@
       <a href="#" id="nav-button">Books</a>
       <a href="#" id="nav-button">Club News</a>
     </div>
+
     <button id="loginButton">Login</button>
   </div>
 
-  <div id="Img_01_div">
-    <img src="Img_01.jpg" alt="not sure" width="100%" height="550" id="Img_01">
+  <!-- The main picture section -->
+  <div id="main_picture_div">
+    <!-- main_picture is retrived from : https://www.shutterstock.com/image-photo/group-friends-taking-part-book-club-345816716 -->
+    <img src="main_picture.jpg" alt="Group Of Friends Taking Part In Book Club At Home" width="100%" height="550"
+      id="main_picture">
+    <!-- The join us now button -->
     <button class="custom-color" id="join_button"
       onclick="document.getElementById('bookclubrego').style.display='block'">JOIN
       US NOW</button>
+
     <div class="custom-background-color" style="display: flex; flex-direction: row;" id="background_in_picture">
       <span id="textInImage_01a">Read Great Book</span>
       <span id="textInImage_01b">Meet Great People</span>
     </div>
   </div>
 
-
+  <!-- The popular book section -->
   <div id="popular_book_wrapper">
-
+    <!-- The popular book title -->
     <div id="popular_book_title_wrapper">
       <h1 class="title">Popular Books</h1>
-
     </div>
-
+    <!-- The arrows at the side of the books -->
     <div class="arrow">
       <div id="right_arrow"></div>
       <div id="left_arrow"></div>
@@ -58,6 +62,7 @@
     <div class="books_wrapper" style="display: flex; flex-direction: row;">
 
       <div class="single_book_wrapper">
+        <!-- popular book is retrived from: https://www.pinterest.nz/pin/637400153490566003/ -->
         <img src="popular_book_1.jpeg" alt="Water for Elehpants - Sara Gruen" width="195" height="290"
           class="book_picture">
         <p class="book_info">Water For Elehpants</p>
@@ -65,6 +70,7 @@
       </div>
 
       <div class="single_book_wrapper">
+        <!-- popular book is retrived from: https://topexperto.com/silent-chains/ -->
         <img src="popular_book_2.jpg" alt="I am Watching You - Teresa Driscoll" width="195" height="290"
           class="book_picture">
         <p class="book_info">I Am Watching You</p>
@@ -72,6 +78,7 @@
       </div>
 
       <div class="single_book_wrapper">
+        <!-- popular book is retrived from: https://ar.pinterest.com/pin/407223991286837682/ -->
         <img src="popular_book_3.jpg" alt="The Wedding Dress - Rachel Hauck" width="195" height="290"
           class="book_picture">
         <p class="book_info">The Wedding Dress</p>
@@ -84,12 +91,11 @@
   </div>
 
 
-
+  <!-- The upcoming event section -->
   <div id="upcoming_event_wrapper">
 
     <div id="upcoming_event_title_wrapper">
       <h1 class="title">Upcoming Events</h1>
-
     </div>
 
     <div class="arrow">
@@ -105,7 +111,9 @@
           book group to join and haven't found one yet...</p>
         <a href="#" id="readMore">Read More</a>
       </div>
+
       <div id="event_picture">
+        <!-- event_picture is retrived from: https://www.signupgenius.com/church/church-icebreaker-questions-for-small-groups.cfm -->
         <img src="event_picture.jpg" alt="sg - people" width="450" height="330" class="book_picture">
       </div>
     </div>
@@ -121,11 +129,10 @@
     </div>
 
 
-
-
     <!-- -- Modal that pops up when you click on "JOIN US NOW" -->
     <div id="bookclubrego" class="w3-modal" style="z-index:4">
       <div class="w3-modal-content w3-animate-zoom">
+
         <div id="popup_header" class="custom-background-color">
           <img src="logo.png" alt="logo" width="75" height="75" id="logo_image_register"></img>
           <button onclick="document.getElementById('bookclubrego').style.display='none'" id="close_button">X</button>
@@ -176,7 +183,6 @@
               onclick="document.getElementById('bookclubrego').style.display='none'">Submit</button>
           </div>
         </div>
-
 
 
       </div>
