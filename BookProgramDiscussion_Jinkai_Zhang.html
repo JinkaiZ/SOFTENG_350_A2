@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Jinkai Zhang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Program Discussion</title>
+  <link rel=stylesheet type="text/css" href="main.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+
+<body style="width:1440px; margin:0 auto;">
+
+  <div class="custom-background-color" style="display: flex; flex-direction: row;" id="header">
+
+    <div id="logo_wrapper">
+
+      <img src="logo.png" alt="logo" width="75" height="75" id="logo_image"></img>
+      <p id="logo_text">Book Program DISCUSSION</p>
+
+    </div>
+    <div id="nav-wrapper">
+      <a href="#" id="nav-button_home">Home</a>
+      <a href="#" id="nav-button">About Us</a>
+      <a href="#" id="nav-button">Events</a>
+      <a href="#" id="nav-button">Books</a>
+      <a href="#" id="nav-button">Club News</a>
+    </div>
+    <button id="loginButton">Login</button>
+  </div>
+
+  <div id="Img_01_div">
+    <img src="Img_01.jpg" alt="not sure" width="100%" height="550" id="Img_01">
+    <button class="custom-color" id="join_button"
+      onclick="document.getElementById('bookclubrego').style.display='block'">JOIN
+      US NOW</button>
+    <div class="custom-background-color" style="display: flex; flex-direction: row;" id="background_in_picture">
+      <span id="textInImage_01a">Read Great Book</span>
+      <span id="textInImage_01b">Meet Great People</span>
+    </div>
+  </div>
+
+
+  <div id="popular_book_wrapper">
+
+    <div id="popular_book_title_wrapper">
+      <h1 class="title">Popular Books</h1>
+
+    </div>
+
+    <div class="arrow">
+      <div id="right_arrow"></div>
+      <div id="left_arrow"></div>
+    </div>
+
+    <div class="books_wrapper" style="display: flex; flex-direction: row;">
+
+      <div class="single_book_wrapper">
+        <img src="popular_book_1.jpeg" alt="Water for Elehpants - Sara Gruen" width="195" height="290"
+          class="book_picture">
+        <p class="book_info">Water For Elehpants</p>
+        <p class="book_info">Sara Gruen</p>
+      </div>
+
+      <div class="single_book_wrapper">
+        <img src="popular_book_2.jpg" alt="I am Watching You - Teresa Driscoll" width="195" height="290"
+          class="book_picture">
+        <p class="book_info">I Am Watching You</p>
+        <p class="book_info">Teresa Driscoll</p>
+      </div>
+
+      <div class="single_book_wrapper">
+        <img src="popular_book_3.jpg" alt="The Wedding Dress - Rachel Hauck" width="195" height="290"
+          class="book_picture">
+        <p class="book_info">The Wedding Dress</p>
+        <p class="book_info">Rachel Hauck</p>
+      </div>
+
+      <div class="custom-background-color" id="dividing_line"> </div>
+
+    </div>
+  </div>
+
+
+
+  <div id="upcoming_event_wrapper">
+
+    <div id="upcoming_event_title_wrapper">
+      <h1 class="title">Upcoming Events</h1>
+
+    </div>
+
+    <div class="arrow">
+      <div id="right_arrow"></div>
+      <div id="left_arrow"></div>
+    </div>
+
+    <div id="event_and_picture_wrapper">
+
+      <div id="event_text">
+        <p>We will host a face-to-face event on 25 May which designed specifically to bring
+          together people interested in starting, joining or growing book groups. If you are currently looking for a
+          book group to join and haven't found one yet...</p>
+        <a href="#" id="readMore">Read More</a>
+      </div>
+      <div id="event_picture">
+        <img src="event_picture.jpg" alt="sg - people" width="450" height="330" class="book_picture">
+      </div>
+    </div>
+
+
+    <div class="custom-background-color" id="dividing_line">
+      <div id="footer-wrapper">
+        <a href="#" id="footer-button">Contact Us</a>
+        <a href="#" id="footer-button">Privacy Policy</a>
+        <a href="#" id="footer-button">Site Map</a>
+        <a href="#" id="footer-button">Terms & Conditions</a>
+      </div>
+    </div>
+
+
+
+
+    <!-- -- Modal that pops up when you click on "JOIN US NOW" -->
+    <div id="bookclubrego" class="w3-modal" style="z-index:4">
+      <div class="w3-modal-content w3-animate-zoom">
+        <div id="popup_header" class="custom-background-color">
+          <img src="logo.png" alt="logo" width="75" height="75" id="logo_image_register"></img>
+          <button onclick="document.getElementById('bookclubrego').style.display='none'" id="close_button">X</button>
+          <h2 id="form_title">REGISTRATION FORM</h2>
+        </div>
+
+        <div id="popup_form">
+
+          <div id="user_details">
+
+            <div class="user_details_input">
+              <input type="text" class="short" placeholder="Given Name">
+            </div>
+            <div class="user_details_input">
+              <input type="text" class="short" placeholder="Surname">
+            </div>
+            <div class="user_details_input">
+              <input type="text" class="short" placeholder="Username">
+            </div>
+            <div class="user_details_input">
+              <input type="text" class="short" placeholder="Password">
+            </div>
+
+          </div>
+
+          <div id="address">
+
+            <div class="address_input">
+              <input type="text" class="long" placeholder="Home Address">
+            </div>
+            <div class="address_input">
+              <input type="text" class="long" placeholder="Work Address">
+            </div>
+
+          </div>
+
+          <div id="contact">
+            <div class="contact_input">
+              <input type="text" class="short" placeholder="Mobile Number">
+            </div>
+            <div class="contact_input">
+              <input type="text" class="short" placeholder="Email">
+            </div>
+          </div>
+
+          <div id="submit_wrapper">
+            <button class="custom-background-color" id="submit_button"
+              onclick="document.getElementById('bookclubrego').style.display='none'">Submit</button>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
